@@ -1,0 +1,186 @@
+/* fonts */
+/* font-family: 'Baloo 2', cursive;
+font-family: 'Fjalla One', sans-serif; */
+
+/* css reset */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* css variables */
+:root {
+  --color1: #0b0c10;
+  --color2: #1f2833;
+  --color3: #c5c6c7;
+  --color4: #04bdfb;
+  --color5: #45a29e;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color1);
+}
+header li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: var(--color4);
+  display: block;
+  padding: 3px 11px;
+  border-radius: 20px;
+  margin: 2px 20px;
+  font-family: "Baloo 2", cursive;
+}
+#navbar li a:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 50px;
+  padding: 3px 10px;
+}
+#head-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 10px;
+  padding: 3px 10px;
+}
+#head-right li a {
+  text-decoration: none;
+  color: var(--color4);
+  display: block;
+  padding: 3px 7px;
+  border-radius: 20px;
+  margin: 2px 7px;
+  font-family: "Baloo 2", cursive;
+}
+#head-right li a:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+#head-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 10px;
+  padding: 3px 10px;
+  font-size: 1.3rem;
+  color: var(--color3);
+  font-family: "Fjalla One", sans-serif;
+}
+
+/* Home */
+
+#home::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: url("../img/bg1.jpg") no-repeat center center/cover;
+  opacity: 90%;
+}
+.box {
+  /* border: 2px solid red; */
+  height: 300px;
+  width: 720px;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color3);
+  font-family: "Fjalla One", sans-serif;
+}
+#home {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.quote {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box h1 {
+  font-size: 10rem;
+  text-shadow: 10px 10px 5px #0b0c10;
+}
+.box h2 {
+  font-size: 4rem;
+  text-shadow: 6px 6px 2px #0b0c10;
+  margin-top: 25px;
+}
+.form-group label {
+  font-size: 1.5rem;
+  padding: 3px 0px;
+  margin: 3px 5px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: "Baloo 2", cursive;
+}
+.form-group input {
+  font-size: 1.1rem;
+  padding: 3px 23px;
+  margin: 3px 5px;
+  border-radius: 10px;
+  width: 80%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2 {
+  background-color: #0b0c10b6;
+  border-radius: 30px;
+  /* border: 2px solid #c5c6c7; */
+}
+/* utility class */
+.h-primary {
+  color: var(--color3);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.h-secondary {
+  padding: 12px;
+  font-family: "Fjalla One", sans-serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid var(--color3);
+  background-color: #0b0c10c4;
+  color: var(--color3);
+  margin: 17px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.center {
+  text-align: center;
+}
